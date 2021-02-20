@@ -2,9 +2,132 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>My HTML assessment</title>
   </head>
   <body>
-    
+    <div id="text">
+      <h1>TEXT</h1>
+
+        <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <blockquote cite="http://">
+        <p><em><strong>Bacon</strong> ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank.</em></p>
+        </blockquote>
+
+        <p><strong>Cheese</strong> on toast airedale the big cheese. Danish fontina cheesy grin airedale danish fontina taleggio the big cheese macaroni cheese port-salut. Edam fromage lancashire feta caerphilly everyone loves chalk and cheese brie. Red leicester parmesan cheese and biscuits cheesy feet blue castello cheesecake fromage frais smelly cheese.</p>
+
+    </div>
+
+    <div id="table">
+      <h1>TABLE</h1>
+        <table border="1">
+          <thead>
+          <tr>
+            <td colspan="6"><center>Scores by quarter</center></td>
+          </tr>
+          <tr>
+            <th rowspan="2">Team Name</th>
+            <th colspan="2">First Half</th>
+            <th colspan="2">Second Half</th>
+            <th rowspan="2">Final</th>
+          </tr>
+          <tr>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Denver</td>
+              <td>7</td>
+              <td>3</td>
+              <td>0</td>
+              <td>7</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Chicago</td>
+              <td>0</td>
+              <td>6</td>
+              <td>3</td>
+              <td>6</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <th>7</th>
+              <th>9</th>
+              <th>3</th>
+              <th>13</th>
+              <th>32</th>
+            </tr>
+          </tfoot>
+        </table>
+    </div>
+    <div id="list">
+      <h1>LIST</h1>
+        <ul>
+          <li><img src="http://assets.stickpng.com/images/580b585b2edbce24c47b2b21.png" width="50" height="50" alt="broncos image"><br><a href="https://www.denverbroncos.com/">Denver Broncos</a>
+            <ul>
+              <li>Coach: Gary Kubiak</li>
+              <li>QB
+                <ol>
+                  <li>Brock Osweiler</li>
+                  <li>Trevor Siemian</li>
+                  <li>Peyton Manning(injured)</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+          <li><img src="https://lh3.googleusercontent.com/proxy/G0AvgEuGJdn75YJVKvrzwEX6GnYfkZ4FqMsSuhXc-wkTFykCqzuNV4sntekFWLYgMtC8qHf-bAsTsvvFjHztLzTy2tEkjkw" width="50" height="50" alt="chicago bears"><br><a href="https://www.chicagobears.com/">Chicago Bears</a>
+            <ul>
+              <li>Coach: Gary Kubiak</li>
+              <li>QB
+                <ol>
+                  <li>Jay Cutler</li>
+                  <li>David Foles</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    <div >
+      <h1>FORM</h1>
+        <form class="" action="index.html" method="post">
+            <label for="firstName">First:</label>
+            <input type="text" name="firstName" value="Bob">
+            <label for="lastName">Last:</label>
+            <input type="text" name="lastName" value="Dobbs"><br>
+            <label for="sport">Favorite Sport:</label> <br>
+              <select id="sport" name="sport">
+                <option value="soccer">Soccer</option>
+                <option value="basketball">Basketball</option>
+                <option value="other">other</option>
+              </select><br>
+               I have:
+              <input type="checkbox" name="history" value="attended"id="attended">
+              <label for="attended">Attended</label>
+              <input type="checkbox" name="history" value="played" id="played">
+              <label for="played">Played</label>
+              <input type="checkbox" name="history" value="coached" id="coached">
+              <label for="coached">Coached</label>
+              <input type="checkbox" name="history" value="bet" id="bet">
+              <label for="bet">Bet on <br> this sport.</label><br>
+              For this sport i prefer the:
+              <input type="radio" name="prefer" value="amateur" id="amateur">
+              <label for="amateur">Amateur</label>
+              <input type="radio" name="prefer" value="college" id="college">
+              <label for="college">College</label>
+              <input type="radio" name="prefer" value="professional" id="professional">
+              <label for="professional">Professional</label><br>
+              <input type="submit" name="submit" value="Submit Query">
+
+        </form>
+    </div>
   </body>
 </html>
